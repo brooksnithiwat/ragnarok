@@ -1,0 +1,505 @@
+body {
+    overflow-y: auto; 
+    overflow-x: hidden;
+    background: url('bg-obt.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Prompt", sans-serif;
+    color:rgb(218, 206, 158);
+}
+.navbar-items img {
+    width: 250px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+  }
+  .navbar {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left-items {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  .right-items {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  .characters {
+    position: absolute;
+    top: 0%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    animation: animateImage 2s infinite alternate; /* Applying animation */
+}
+.characters img {
+    width: 700px; /* Initial width */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 0.3s ease; /* Adding transition for smooth animation */
+}
+
+/* Animation keyframes for resizing */
+@keyframes animateImage {
+    from {
+        transform: scale(1); /* Initial scale */
+    }
+    to {
+        transform: scale(1.2); /* Scale up */
+    }
+}
+
+.Pre-Register {
+    position: relative; /* Make sure the position is set */
+    z-index: 1; /* Set a higher z-index */
+}
+.Pre-Register {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Align the content (image) horizontally */
+}
+
+/* Making the image smaller */
+.Pre-Register img {
+    max-width: 500px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.top-image {
+    margin-top: 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the images are in front */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.lower-image {
+    margin-top: 120px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.lower-image img:hover ,.top-image img:hover{
+    filter: brightness(2); 
+}
+.contact {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+}
+
+.contact img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.contact {
+    margin-top: 500px;
+    bottom: 0;
+    left: 50%;
+    width: 100vw; 
+    transform: translateX(-50%);
+    max-height: 100vh; /* Limit height to the viewport height */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds viewport height */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.contact-image {
+    position: relative; /* ตั้งค่าเพื่อให้ภาพทั้งสองเป็น relative ต่อกัน */
+    width: 100vw;
+    max-height: 80vh; /* กำหนดความสูงสูงสุดของรูป */
+    object-fit: cover; /* ให้รูปปรับขนาดให้พอดีกับพื้นที่ที่กำหนดไว้ */
+    margin-top: -20px;
+    margin-left: -20px;
+    bottom: 0;
+    z-index: -1; /* ตั้งค่า z-index เป็นค่าติดลบเพื่อให้ภาพอยู่ข้างหลัง */
+}
+.contact-us {
+    width: 30%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 330; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 50%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-50%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+.contact-text{
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 240; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 49%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+.contact-text-2{
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 240; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 79%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+
+.g1{
+    margin: 10px; /* กำหนดระยะห่างทั้งแนวนอนและแนวตั้งระหว่างรูปภาพในคลาส .image-pr เป็น 10px */
+    width: 8%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 150; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 30%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+.g2{
+    margin: 10px; /* กำหนดระยะห่างทั้งแนวนอนและแนวตั้งระหว่างรูปภาพในคลาส .image-pr เป็น 10px */
+    width: 8%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 150; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 40%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+.g3{
+    margin: 10px; /* กำหนดระยะห่างทั้งแนวนอนและแนวตั้งระหว่างรูปภาพในคลาส .image-pr เป็น 10px */
+    width: 8%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 150; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 50%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+.g4{
+    margin: 10px; /* กำหนดระยะห่างทั้งแนวนอนและแนวตั้งระหว่างรูปภาพในคลาส .image-pr เป็น 10px */
+    width: 25%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 160; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 69%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    transform: translateX(-60%); /* ให้ภาพย้ายไปที่กึ่งกลาง */
+    z-index: 1; /* ตั้งค่า z-index เป็นค่าบวกเพื่อให้ภาพ "Contact Us" อยู่ข้างหน้า */
+}
+
+#popupregis ,#popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px; 
+    background-image: url(images/bg-gplay.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 10px;
+    z-index: 100000;
+    transform: translate(-50%, -50%);
+}
+
+
+#popup-content-regis,#popup-content{
+    text-align: center;
+}
+
+#register-form {
+    display: inline-block;
+    text-align: left;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#register-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#register-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #45a049;
+}
+
+#close-popup-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#close-popup-btn:hover {
+    background-color: #bbb;
+}
+#login-form {
+
+    display: inline-block;
+    text-align: left;
+}
+
+#login-form label {
+
+    display: block;
+    margin-bottom: 80px;
+}
+
+#login-form input {
+    margin-top: -90px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#close-login-popup-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    margin-top: 20px;
+}
+
+#close-login-popup-btn:hover {
+    background-color: #bbb;
+}
+
+#login-form button:hover {
+        z-index: 1000000000000000;
+    background-color: #45a049;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+/* .navbar-items{
+        display: none;
+
+    } */
+    .left-items {
+        padding-top: 2px;
+        position: absolute;
+        top: calc(35% + 600px); /* Adjusted to include padding */
+        left: 50%;
+        transform: translate(-50%, -70%); /* Adjusted */
+        z-index: 49;
+
+    }
+
+
+
+    .right-items {
+        padding-top: 2000px;
+        position: absolute;
+        top: 60%; /* ย้ายไปยังขอบบนของหน้าจอ */
+        left: 50%; /* ย้ายไปยังขอบซ้ายของหน้าจอ */
+        transform: translate(-50%, -70%); /* ย้ายองค์ประกอบกลับไปยังตำแหน่งที่ต้องการ */
+        z-index: 40;
+    }
+    .logo {
+        display: block; /* Ensures that the margin:auto works */
+        margin: 0 auto; /* Centers the element horizontally */
+    }  
+    .navbar-items {
+        margin-bottom: 10px;
+    }
+    .characters {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        height: auto; 
+        animation: animateImage 2s infinite alternate; 
+    }
+.characters img {
+    width: 380px; 
+    height: auto; 
+    transition: width 0.3s ease; 
+}
+.Pre-Register {
+    position: relative; /* Make sure the position is set */
+    top:65%;
+    z-index: 10; /* Set a higher z-index */
+}
+.Pre-Register img{
+    width: 400px; 
+    height: auto; 
+}
+
+.top-image {
+    margin-top: 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the images are in front */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.top-image img{
+    width: 150px; 
+    height: auto; 
+}
+.lower-image {
+    margin-top: 90px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.lower-image img{
+    width: 150px; 
+    height: auto; 
+}
+.contact-text {
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    position: absolute; /* Setting position to absolute */
+    left: 40%; /* Position where the image will be */
+    transform: translateX(-50%); /* Move the image to the center horizontally */
+    top: 100px; /* Position from the top */
+    z-index: 1; /* Setting a positive z-index to bring the "Contact Us" image to the front */
+}
+
+
+.contact-text-2{
+    font-weight: bold;
+    font-size: 30px;
+    width: 30%;
+    position: absolute; /* ตั้งค่าเพื่อให้ภาพ "Contact Us" เป็น absolute ภายใน .contact-image */
+    bottom: 240; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    left: 79%; /* ตำแหน่งที่จะให้ภาพอยู่ */
+    top: 100px; 
+    transform: translateX(-60%); 
+    z-index: 1; 
+}
+
+.contact-us {
+    width: 240px;
+    height: auto; 
+
+}
+.line-fb-yt img {
+    width: 60px;
+    height: auto;
+    transform: translateY(50px) translateX(-40px); /* Adjust the values to move the images downwards and horizontally */
+}
+
+.g4{
+    transform: translateX(-100px) translateY(-10px);
+    width: 200px;
+    height: auto;
+}
+
+#popupregis {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    width: 400px; 
+    background-image: url(images/bg-gplay.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 30px;
+
+    transform: translate(-50%, -50%);
+}
+
+
+#popup{
+    position: fixed;
+    top: 95%;
+    left: 51%;
+    width: 4000px; 
+    background-image: url(images/bg-gplay.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+
+}
+
+
+
+#popup-content-regis,#popup-content{
+
+    text-align: center;
+}
+
+#register-form {
+    display: inline-block;
+    text-align: left;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#register-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#register-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #45a049;
+}
+
+#close-popup-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#close-popup-btn:hover {
+    background-color: #bbb;
+}
+.navbar-items:hover{
+    filter: brightness(2); 
+}
+
+
+}
+
+  
